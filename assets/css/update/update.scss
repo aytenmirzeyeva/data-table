@@ -4,13 +4,20 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+body {
+  background-color: #f7f9fc;
+}
 .container {
   width: 90%;
   margin: 0 auto;
 }
 h1 {
-  margin: 20px 0;
-  padding-left: 20%;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+  margin: 30px 0;
+  text-transform: uppercase;
+  text-align: center;
 }
 .content {
   margin: 20px 0;
@@ -26,32 +33,41 @@ h1 {
     align-items: center;
     input {
       width: 70%;
-      padding: 7px 10px;
-      margin: 10px 0;
-      border-radius: 5px;
-      border: 1px solid #c6c6c6;
-      font-size: 18px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      &:focus {
+        border-color: #66afe9;
+        outline: none;
+        box-shadow: 0 0 5px rgba(102, 175, 233, 0.5);
+      }
     }
     label {
-      font-weight: bold;
-      font-size: 20px;
+      font-size: 17px;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 10px;
+      text-align: left;
+      color: #333;
     }
   }
-  button {
-    padding: 10px 14px;
-    color: #fff;
-    border-radius: 5px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-  }
+
   #btn-update {
-    background-color: #33b249;
-    font-size: 18px;
-    width: 200px;
-    margin-top: 20px;
+    background-color: #fff;
+    color: #03c03c;
+    border: 1px solid #03c03c;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     &:hover {
-      background-color: #2d9c3f;
+      background-color: #03c03c;
+      color: #fff;
     }
   }
 }

@@ -65,8 +65,8 @@ fetch(`${BASE_URL}/products`)
         <td><img src='${item.image}'/></td>
         <td>${item.price} $</td>
          <td>
-          <button type="button" id="view-btn" onclick="viewDatas(${item.id})">View</button>
-          <button type="button" id="delete-btn" onclick="deleteItem(${item.id},event)">Delete</button>
+          <button type="button" id="view-btn" onclick="viewDatas(${item.id})"><i class="fa-regular fa-eye"></i></button>
+          <button type="button" id="delete-btn" onclick="deleteItem(${item.id},event)"><i class="fa-solid fa-trash"></i></button>
         </td>
     </tr>
     `;
